@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+      background: #0098ff;
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 0 50px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    video {
+      background: white;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      max-width: calc(50% - 5%);
+      margin: 0 2%;
+      box-sizing: border-box;
+      border-radius: 2px;
+      padding: 0;
+    }
+    .copy {
+      position: fixed;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+
+//   function Copy() {
+
+//     window.ClipboardData.setData("Text", location.href);
+
+//     // var copyText = window.location.href;
+//     // copyText.select();
+//     // copyText.setSelectionRange(0, 99999)
+//     // document.execCommand("copy");
+//     // alert("Copied the text: " + copyText.value);
+//   }
+  </script>
+  <div class="copy">WebRTC </div>
+  <div style="display: flex">
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+  </div>
+  <div style="position: absolute; left : 250px; bottom: 25px" >
+    <!-- <button onclick= "Copy();" class="clipboard">Copy URL</button> -->
+    <!-- <button onclick="Copy()" > copy url</button> -->
+
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
